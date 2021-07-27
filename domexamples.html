@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples</title>
+    <!-- 6
+        <style>
+        .blue{color:blue;}
+    </style> -->
+</head>
+<body>
+    
+    <h1>DOM Examples</h1>
+    <!--1 
+    <p>Here is a paragraph</p>
+    <p>Here is another paragraph</p>
+    <p>Here is one more paragraph</p> -->
+
+    <!--2  
+    <p class = "special">Here is a paragraph</p>
+    <p>Here is another paragraph</p>
+    <p class = "special">Here is one more paragraph</p> -->
+
+    <!-- 3
+    <div id="special">
+        <p class="someclass">Here is a paragraph</p>
+        <p>Here is another paragraph</p>
+        <p class="someclass">Here is one more paragraph</p>
+    </div> -->
+
+    <!-- 4
+    <div id="special">
+        <p>Here is some text</p>
+        <p>Here is some more text</p>
+    </div>
+    <p>Not this paragraph!</p> -->
+
+<!-- 5
+    <div id="special">
+        <p>Here is a paragraph</p>
+        <p>Here is another paragraph</p>
+        <p>Here is one more paragraph</p>
+    </div>
+ -->
+
+ <!-- 6
+    <div id="special">
+        <p>Here is some Text</p>
+        <p>Here is some more Text</p>
+    </div> -->
+
+    <!-- 7
+    <form>
+        <label>
+            <input type="checkbox">
+            Yes!
+        </label>
+    </form> -->
+
+    <script>
+        //1
+        /* var ps = document.getElementsByTagName('p');
+        for(var i = 0 ; i < ps.length; i++){
+
+            ps[i].style.color="red";
+            alert(`showing paragraph ${i+1}`);
+
+        } */
+
+
+        //2
+        //var myClass = document.getElementsByClassName('special');
+        /* for (var eachClass of myClass){
+            eachClass.style.color="red";
+        } */
+
+        /* same as above */
+
+        /* for (var i = 0; i < myClass.length; i++) {
+                myClass[i].style.color = "red";
+            } */
+        
+
+        //colors the 2nd element red in html collections
+        /* myClass[1].style.color = "red"; */
+
+
+        //3
+        /* var myText = document.querySelector('#special .someclass')
+        myText.style.color = "red"; */
+
+        //4
+        /* var myText = document.querySelectorAll("#special p");
+        for(var eachParagraph of myText){
+            eachParagraph.style.fontWeight = "bold";
+        }
+
+        //yet again same as above
+        for(var i = 0; i < myText.length; i++){
+            myText[i].style.fontWeight = "bold";
+        } */
+
+        //5 replace elements (deletes all the special divs and puts the new paragraph in)
+        /*document.querySelector('#special').innerHTML = "<p>Here is a new paragraph</p>";*/
+
+        //6
+        /* var firstPara = document.querySelector('p');
+        firstPara.className = "blue"; */
+
+        //7
+        /* var checkbox = document.querySelector('input');
+        checkbox.setAttribute("checked", "checked"); */
+
+    </script>
+
+</body>
+</html>
